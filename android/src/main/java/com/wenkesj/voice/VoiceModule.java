@@ -106,17 +106,17 @@ public class VoiceModule extends ReactContextBaseJavaModule implements Recogniti
         }
         case "EXTRA_SPEECH_INPUT_MINIMUM_LENGTH_MILLIS": {
           Double extras = opts.getDouble(key);
-          intent.putExtra(RecognizerIntent.EXTRA_SPEECH_INPUT_MINIMUM_LENGTH_MILLIS, Long.valueOf(extras.intValue()));
+          intent.putExtra(RecognizerIntent.EXTRA_SPEECH_INPUT_MINIMUM_LENGTH_MILLIS, extras.longValue());
           break;
         }
         case "EXTRA_SPEECH_INPUT_COMPLETE_SILENCE_LENGTH_MILLIS": {
           Double extras = opts.getDouble(key);
-          intent.putExtra(RecognizerIntent.EXTRA_SPEECH_INPUT_COMPLETE_SILENCE_LENGTH_MILLIS, Long.valueOf(extras.intValue()));
+          intent.putExtra(RecognizerIntent.EXTRA_SPEECH_INPUT_COMPLETE_SILENCE_LENGTH_MILLIS, extras.longValue());
           break;
         }
         case "EXTRA_SPEECH_INPUT_POSSIBLY_COMPLETE_SILENCE_LENGTH_MILLIS": {
           Double extras = opts.getDouble(key);
-          intent.putExtra(RecognizerIntent.EXTRA_SPEECH_INPUT_POSSIBLY_COMPLETE_SILENCE_LENGTH_MILLIS, Long.valueOf(extras.intValue()));
+          intent.putExtra(RecognizerIntent.EXTRA_SPEECH_INPUT_POSSIBLY_COMPLETE_SILENCE_LENGTH_MILLIS, extras.longValue());
           break;
         }
       }
